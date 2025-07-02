@@ -1,0 +1,96 @@
+.container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container,h2{
+            margin: 0;
+        }
+        .buttongroup{
+            display: flex;
+            gap: 40px;
+        }
+        #button1{
+            background-color: rgb(103, 181, 248);
+            border: 1px solid;
+            border-radius: 10px;
+            padding: 10px 30px;
+        }
+        #button2{
+            border: 2px solid;
+            border-radius: 10px;
+            padding: 5px 10px;
+
+        }
+        dialog{
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            
+
+        }
+        dialog form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        dialog button{
+            padding: 10px 20px;
+            align-self: flex-end;
+        }
+
+        dialog textarea,input{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 8px;
+        }
+
+        dialog input:hover,
+    dialog textarea:hover {
+        border-color: #007BFF;
+        background-color: #f9f9ff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+    dialog input:focus,
+dialog textarea:focus {
+    border-color: #007BFF;
+        background-color: #f9f9ff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        outline: none;
+}
+       .dialog_button{
+        align-self: flex-end;
+        gap: 10px;
+       }
+       form button{
+   background-color: rgb(103, 181, 248);
+            border: 1px solid;
+            border-radius: 10px;
+            padding: 10px 30px;
+               }
+.note-card {
+    background-color: #f0f8ff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.note-card button{
+    width: 40px;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.blur{
+    filter: blur(5px);
+    pointer-events: none
+}
